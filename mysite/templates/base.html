@@ -6,9 +6,9 @@
 
 <head>
 <meta charset="utf-8" />
-<title>Portfolio Emil Dworniczak </title>
-<meta name="description" content="Serwis poświecony nauce HTML/CSS, moja pierwsza autorska strona internetowa" />
-<meta name="keaywords" content="Nauka, kurs, Portfolio, IT, Emil, Dworniczak, Emil Dworniczak, HTML, CSS, SEO" />
+<title>Nauka Django  </title>
+<meta name="description" content="Serwis biblioteki, moja pierwsza autorska strona internetowa" />
+<meta name="keaywords" content="Nauka, kurs, Portfolio, IT, Emil, Dworniczak, biblioteka, HTML, CSS, SEO" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Emil Dworniczak"/>
@@ -20,24 +20,25 @@
 <body>
 <div id="container">
 	<div id="logo">
-	Emil Dworniczak strona www ;)
+	Strona biblioteki strona www ;)
 	</div>
 	<div id="menu">
 	<div class="option"><a style="color:white" href="#">Strona Główna</a></div>
-	<div class="option"><a style="color:white" href="it.html">Dlaczego IT</a></div> 
+	<div class="option"><a style="color:white" href="/blog">Blog</a></div> 
 	<div class="option">
-	<a style="color:white" href="https://www.linkedin.com/in/emil-dworniczak-832556146/" target="_blank" title="Mój Linkedin">
+	<a style="color:white" href="#" target="_blank" title="Linkedin biblioteki">
 	Linkedin </a></div>
 	<div class="option">
-	<a style="color:white" href="https://twitter.com/iEmix" target="_blank" title="Mój Twitter">Twitter </a></div>
+	<a style="color:white" href="#" target="_blank" title="Twitter bibliotetki">Twitter </a></div>
 	<div class="option">
-	<a style="color:white" href="https://www.facebook.com/emil.dworniczak" target="_blank" title="Moj Facebook">Facebook </a></div>
-	<div class="option"><a style="color:white" href="contact.html">Kontakt</a></div>
+	<a style="color:white" href="#" target="_blank" title="Facebook biblioteki">Facebook </a></div>
+	<div class="option"><a style="color:white" href="/contact">Kontakt</a></div>
+	<div class="option"><a style="color:white" href="/admin">Baza danych</a></div>
 	<div style="clear:both;"></div>
 	</div>
 	<div id="topbar">
 		<div id="topbarL">
-			<img src="img/linux.png"/>
+			<img src="{% static "img/base.png" %}" alt="My image"/>
 		</div>
 		<div id="topbarR">
 		<span class="bigtitle">Dla poprawy humoru </span>
@@ -50,26 +51,25 @@
 	</div>
 	<div id="sidebar">
 	<div class="optionL"><a href="#">Strona Główna</a></div>
-	<div class="optionL"><a href="it.html">Dlaczego IT</a></div> 
+	<div class="optionL"><a href="/blog">Blog</a></div> 
 	<div class="optionL">
-	<a href="https://www.linkedin.com/in/emil-dworniczak-832556146/" target="_blank" title="Mój Linkedin">
-	Linkedin </a></div>
+	<a href="#" target="_blank" title="Linkedin biblioteki">Linkedin </a></div>
 	<div class="optionL">
-	<a href="https://twitter.com/iEmix" target="_blank" title="Mój Twitter">Twitter </a></div>
+	<a href="#" target="_blank" title="Twitter biblioteki">Twitter </a></div>
 	<div class="optionL">
-	<a href="https://www.facebook.com/emil.dworniczak" target="_blank" title="Moj Facebook">Facebook </a></div>
-	<div class="optionL"><a href="contact.html">Kontakt</a></div>
+	<a href="#" target="_blank" title="Facebook biblioteki">Facebook </a></div>
+	<div class="optionL"><a href="/contact">Kontakt</a></div>
+	<div class="optionL"><a href="/admin">Baza danych</a></div>
 	<div style="clear:both;"></div>
 	</div>
 	<div id="content">
 	<span class="bigtitle">Kilka słów o mnie</span>
 	<div class="dottedline"></div>
 		Witajcie na mojej pierwszej stronie internetowej</br></br>
-		Moją pasją jest rozwój osobisty i nieustanna nauka.</br>
-		Jeszcze nie tak dawno byłem kompletnie innym człowikiem chciałem ciągle się bawić, iść po najniższej lini oporu lecz tudne przeżycia zmieniły mnie. Dostałem od świata drugą szanse i teraz chcę ją wykorzystać ;)  
+		Moją pasją jest rozwój osobisty i nieustanna nauka.</br> 
 		Moim celem jest zdobywanie kwalifikacji zawodowych, pozyskanie nowej wiedzy, nieustanny
 		rozwój oraz zdobycie doświadczenia. Szukam wyzwań dzięki którym
-		mógłbym się rozwinąć. </br>
+		mógłbym się rozwinąć. Nauka Django </br>
 		
 		<h4>Moje ulubione cytaty:</h4>
 
@@ -78,7 +78,7 @@
 		"Nigdy, nigdy , nigdy, nigdy się nie poddawaj" - Winston Churchill </br></br>
 		"Nigdy nie bój się spróbować czegoś nowego.Pamiętaj amatorzy zbudowali Arkę, a profesjonaliści Titanica"</br></br>
 		Trzeba umieć kochać życie, nawet jak to życie nie kocha nas.
-		<h5>Dziękuje za zapoznanie się z moją pierwszą stroną internetową.</h5>
+		<h5>Dziękuje za zapoznanie się z moją pierwszą stroną internetową z użyciem django.</h5>
 	</div>
 	
 	<div id="footer">
