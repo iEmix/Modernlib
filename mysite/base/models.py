@@ -3,7 +3,9 @@ from django.db import models
 # Create your models here.
 
 class Uzytkownicy (models.Model):
-    ##verbose_name_plural = "Uzytkownicy" myślę nad rozwiązaniem
+    class Meta:
+        verbose_name = "Użytkownik"
+        verbose_name_plural = "Użytkownicy"
     iduzytkownika = models.IntegerField()
     typ = models.IntegerField()
     imie = models.CharField(max_length=250)
@@ -14,6 +16,9 @@ class Uzytkownicy (models.Model):
     from_date = models.DateTimeField('godzina dodania')
 
 class Autorzy(models.Model):
+    class Meta:
+        verbose_name = "Autor"
+        verbose_name_plural = "Autorzy"
     idautora = models.IntegerField()
     imie = models.CharField(max_length=250)
     nazwisko = models.CharField(max_length=250)
@@ -21,6 +26,9 @@ class Autorzy(models.Model):
     numerkontaktowy = models.IntegerField()
 
 class ksiazki(models.Model):
+    class Meta:
+        verbose_name = "Ksiazka"
+        verbose_name_plural = "Ksiazki"
     idksiazki = models.IntegerField()
     nazwa = models.CharField(max_length=250)
     ilosc = models.CharField(max_length=250)
@@ -29,6 +37,9 @@ class ksiazki(models.Model):
     pub_date = models.DateTimeField('data wydania')
 
 class Zamowienia(models.Model):
+    class Meta:
+        verbose_name = "Zamowienie"
+        verbose_name_plural = "Zamowienia"
     idzamowienia = models.IntegerField()
     idrodzaj = models.IntegerField()
     datasprzedazy = models.CharField(max_length=250)
@@ -38,6 +49,9 @@ class Zamowienia(models.Model):
 
 
 class Reklamacje(models.Model):
+    class Meta:
+        verbose_name = "Reklamacja"
+        verbose_name_plural = "Reklamacje"
     idreklamacji = models.IntegerField()
     reklamacja_date = models.DateTimeField('data reklamacji')
     status_reklamacji = models.IntegerField()
