@@ -1,29 +1,32 @@
 from django.db import models
 
 # Create your models here.
+
 class Uzytkownicy (models.Model):
+    ##verbose_name_plural = "Uzytkownicy" myślę nad rozwiązaniem
     iduzytkownika = models.IntegerField()
     typ = models.IntegerField()
     imie = models.CharField(max_length=250)
     nazwisko = models.CharField(max_length=250)
     miasto = models.CharField(max_length=250)
     numertelefonu = models.IntegerField()
-    from_date = models.DateTimeField('od kiedy jest w bazie')
-
+    email = models.EmailField()
+    from_date = models.DateTimeField('godzina dodania')
 
 class Autorzy(models.Model):
     idautora = models.IntegerField()
     imie = models.CharField(max_length=250)
     nazwisko = models.CharField(max_length=250)
+    email = models.EmailField()
     numerkontaktowy = models.IntegerField()
-
 
 class ksiazki(models.Model):
     idksiazki = models.IntegerField()
     nazwa = models.CharField(max_length=250)
     ilosc = models.CharField(max_length=250)
     nrkontakowy = models.IntegerField()
-    pub_date = models.DateTimeField('date published')
+    wydawca = models.CharField(max_length=250)
+    pub_date = models.DateTimeField('data wydania')
 
 class Zamowienia(models.Model):
     idzamowienia = models.IntegerField()
